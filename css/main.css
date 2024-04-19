@@ -7,6 +7,10 @@ html {
   height: 100%;
 }
 
+.total-show-body {
+  margin: 0px !important;
+}
+
 /*Set background image*/
 .container {
   background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
@@ -211,6 +215,10 @@ html {
   justify-content: center;
 }
 
+.footer iframe {
+  background-color: transparent;
+}
+
 .media-icons {
   display: flex;
   flex-direction: row;
@@ -239,4 +247,30 @@ html {
 }
 .carousel {
   border: 1px white solid;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.visualization-info {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  padding: 15px;
+}
+
+.viso-img {
+  width: 100%;
+  height: 80%;
+  margin-top: 25px;
+}
+
+.shows-info {
+  width: 50%;
+  align-self: center;
+  padding: 15px;
+  height: 100%;
 }
