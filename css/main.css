@@ -28,8 +28,6 @@ html {
   text-align: center;
   font-size: 25px;
 }
-
-/*Set circle in unordered list*/
 .middle ul {
   list-style-type: circle;
 }
@@ -38,25 +36,9 @@ html {
 .middle ul li {
   text-align: left !important;
 }
-
-/*Set text color for a tag inside middle class and ul>li element*/
 .middle ul li a {
   color: beige;
 }
-
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
-}
-<<<<<<< Updated upstream
-=======
-
-/* .navbar-nav .nav-item:hover .nav-link {
-  background-color: #ea0000;
-  color: black !important;
-  border-radius: 5px;
-} */
 
 .navbar-nav .nav-item {
   transition: transform 0.3s ease-in-out;
@@ -160,7 +142,6 @@ html {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-
 .about-product-content {
   display: flex;
   flex-direction: row;
@@ -199,7 +180,6 @@ html {
   color: #1399FF !important;
   font-weight: bold;
 }
-
 .hand-made-icon {
   padding: 8px;
 }
@@ -208,7 +188,6 @@ html {
   height: 700px;
   padding: 0px 60px;
 }
-
 .navbar {
   height: 53px;
 }
@@ -221,7 +200,6 @@ html {
   justify-content: space-between;
   height: 100%;
 }
-
 .top-product-heading {
   font-family: 'Times New Roman', Times, serif;
   padding-top: 15px;
@@ -241,23 +219,21 @@ html {
   padding: 15px;
   height: 100%;
 }
-
 .shopping-cart {
   margin-right: 37px;
 }
 
-/* Modify the CSS for the success banner */
 .success-banner {
-  position: fixed; /* Change to fixed */
-  bottom: 20px; /* Adjust this value as needed */
+  position: fixed;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #28a745; /* Green color for success */
-  color: #fff; /* White text color */
+  background-color: #28a745;
+  color: #fff; 
   padding: 10px 20px;
   border-radius: 5px;
-  z-index: 999; /* Ensure the banner is above other content */
-  display: none; /* Initially hide the banner */
+  z-index: 999; 
+  display: none; 
 }
 
 .search-form {
@@ -289,4 +265,3 @@ html {
   display: flex;
   justify-content: center; /* Center the content horizontally */
 }
->>>>>>> Stashed changes
