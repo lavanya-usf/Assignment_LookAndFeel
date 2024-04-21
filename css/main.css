@@ -189,7 +189,8 @@ html {
 }
 
 .gallery-image {
-  height: 700px;
+  height: 650px;
+  width: 800px;
   padding: 0px 60px;
 }
 .navbar {
