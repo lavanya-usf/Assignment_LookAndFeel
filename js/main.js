@@ -1,10 +1,5 @@
-/**
- * Your JS code here
- */
 
-/**
- * Sample code
- */
+console.log('executed');
 document.addEventListener('DOMContentLoaded', function() {
   var ulElement = document.getElementById('links');
   var liElement = document.createElement('li');
