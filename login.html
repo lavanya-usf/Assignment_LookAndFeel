@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registration.css" />
+    <title>Registration</title>
+    <script src="js/registration.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <ul class="tab-group">
+            <li class="tab"><a href="#login">Log In</a></li>
+        </ul>
+        <div id="login">
+            <h1>Welcome Back!</h1>
+            <form action="index.html" method="post" id="loginForm">
+                <div class="field-wrap">
+                    <input type="email" required autocomplete="off" placeholder="Enter User name..*" class="req"/>
+                </div>
+                <div class="field-wrap">
+                    <input type="password" required autocomplete="off" class="req" placeholder="Enter Password..*"/>
+                </div>
+                <p class="forgot"><a href="#">Forgot Password?</a></p>
+                <button class="button button-block" type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
