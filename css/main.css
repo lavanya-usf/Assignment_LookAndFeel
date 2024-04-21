@@ -7,6 +7,10 @@ html {
   height: 100%;
 }
 
+.total-show-body {
+  margin: 0px !important;
+}
+
 /*Set background image*/
 .container {
   background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
@@ -45,3 +49,244 @@ html {
   color: red;
   text-decoration: none;
 }
+<<<<<<< Updated upstream
+=======
+
+/* .navbar-nav .nav-item:hover .nav-link {
+  background-color: #ea0000;
+  color: black !important;
+  border-radius: 5px;
+} */
+
+.navbar-nav .nav-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item:hover {
+  transform: translateY(-5px);
+}
+
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1399FF;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: #ea0000;
+}
+
+.navbar-nav .nav-item:hover .nav-link::after {
+  transform: scaleX(1);
+}
+
+
+.navbar {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.nav-item {
+  line-height: 2rem !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.about-product-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0px;
+}
+.footer {
+  width: 100%;
+  height: 8%;
+  background-color: #1399FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-icons {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-icons svg {
+  margin: 0 8px;
+}
+
+.copyrights {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #1399FF !important;
+  font-weight: bold;
+}
+
+.hand-made-icon {
+  padding: 8px;
+}
+
+.gallery-image {
+  height: 700px;
+  padding: 0px 60px;
+}
+
+.navbar {
+  height: 53px;
+}
+.carousel {
+  border: 1px white solid;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.top-product-heading {
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 15px;
+  margin-left: 19px;
+  font-weight: bold;
+}
+
+.viso-img {
+  width: 100%;
+  height: 80%;
+  margin-top: 25px;
+}
+
+.shows-info {
+  width: 50%;
+  align-self: center;
+  padding: 15px;
+  height: 100%;
+}
+
+.shopping-cart {
+  margin-right: 37px;
+}
+
+/* Modify the CSS for the success banner */
+.success-banner {
+  position: fixed; /* Change to fixed */
+  bottom: 20px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745; /* Green color for success */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 999; /* Ensure the banner is above other content */
+  display: none; /* Initially hide the banner */
+}
+
+.search-form {
+  padding: 8px;
+}
+
+.navbar-color {
+  background-color: #3C5B6F;
+}
+
+.carousel-item {
+  background-color: #fff;
+}
+
+.card {
+   padding: 10px;
+}
+
+.about-product-content .card {
+  margin-right: 20px;
+}
+.about-product-content .card:last-child {
+  margin-right: 0;
+}
+
+.product-details {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+>>>>>>> Stashed changes
