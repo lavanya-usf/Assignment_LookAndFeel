@@ -71,4 +71,12 @@
         position: relative;
     }
 }
-  
+
+.button-add {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editBagBtn {
+    margin-left: 5px;
+}
