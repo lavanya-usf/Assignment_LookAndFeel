@@ -342,3 +342,38 @@ html {
 .category-heading h4:nth-last-child(2){
   margin-right: 106px;
 }
+
+.team-member {
+  text-align: center;
+  width: 250px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card.about {
+  border: 1px solid black !important;
+}
