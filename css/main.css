@@ -4,7 +4,8 @@ Sample css code
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body,
 html {
-  height: 100%;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 .total-show-body {
@@ -170,21 +171,36 @@ html {
     margin-right: 5px !important;
     height: 121px;
   }
-
-  .category-heading h4 {
-    margin-right: 76px !important;
-  }
 }
 
-@media screen and (min-width: 375px) and (max-width: 667px) {
-  
-}
 .about-product-content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 20px;
   padding-left: 20px;
   margin: 0px;
+}
+.our-services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  .our-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0px;
+  }
 }
 .footer {
   width: 100%;
@@ -214,7 +230,7 @@ html {
 }
 
 .navbar-brand {
-  color: #1399FF !important;
+  color: #ffff !important;
   font-weight: bold;
 }
 .hand-made-icon {
@@ -241,8 +257,8 @@ html {
 .top-product-heading {
   font-family: 'Times New Roman', Times, serif;
   padding-top: 15px;
-  margin-left: 19px;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .viso-img {
@@ -269,7 +285,7 @@ html {
   position: fixed;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-70%);
   background-color: #28a745;
   color: #fff; 
   padding: 10px 20px;
@@ -324,11 +340,12 @@ html {
 }
 
 .categories {
-  width: 92%;
-  height: 280px;
+  width: 100%; /* Adjusted to take full width */
+  max-width: 800px; /* Added max-width for better responsiveness */
   padding: 15px;
   margin-top: 10px;
-  margin-left: 160px;
+  margin-left: auto; /* Center align on larger screens */
+  margin-right: auto; /* Center align on larger screens */
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -340,59 +357,43 @@ html {
 
 .category-cards {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
   padding: 10px;
+  margin-right: 10px !important;
 }
 
 .card.category {
   border-radius: 50%;
   padding: 10px;
-  width: 150px;
+  width: 180px;
   height: 150px;
-  margin-right: 100px;
   overflow: hidden;
   position: relative;
 }
-.card.category:last-child {
-  margin-right: 0;
-}
 
 .category-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0px;
+  border-radius: 50%;
 }
 
-.category-heading {
-  display: flex;
-  flex-direction: row;
-}
-
-.category-heading h4 {
-  margin-right: 125px;
-}
-.category-heading h4:last-child {
-  margin-right: 0px;
-}
-.category-heading h4:nth-last-child(2){
-  margin-right: 106px;
-}
-
-@media screen and (min-width: 280px) and (max-width: 1180) {
-  .navbar-color {
-    color: black;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .categories {
+    margin-left: 160px;
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 1180) {
- #carouselExampleCaptions {
-  display: none;
- }
+@media only screen and (min-width: 280px) and (max-width: 1180px) {
+  .navbar-color {
+    color: black;
+  }
+  .category-img {
+    width: 78px;
+    height: 78px;
+  }
 }
-
 
 .team-member {
   text-align: center;
@@ -436,6 +437,8 @@ html {
   margin-top: 20px;
   padding: 10px;
   align-items: center;
+  background-color: #749BC2;
+  color: white;
 }
 
 .about-dev {
@@ -455,4 +458,43 @@ html {
   margin-left: 15px;
   height: 40px !important;
   margin-top: 8px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1126px){
+  .navbar {
+    width: 100%;
+  }
+  .top-product-heading {
+    margin-left: 10px
+  }
+}
+.About-heading {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1024px) {
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .erd-img {
+    width: 390px;
+    height: 390px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .erd-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .erd-img {
+    width: 100%;
+  }
 }

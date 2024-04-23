@@ -80,3 +80,13 @@
 .editBagBtn {
     margin-left: 5px;
 }
+
+@media screen and (min-width: 280px) and (max-width: 1024px) {
+    .flower-vase {
+        width: 800px;
+        height: 800px;
+    }
+    .table {
+        width: 860px !important;
+    }
+}

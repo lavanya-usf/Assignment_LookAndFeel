@@ -23,7 +23,8 @@
         <li class="nav-item cart-icon">
             <img class="shopping-cart" src="img/shopping-cart.png" />
             <span id="cartCount">0</span>
-          </li>
+        </li>
+        <button id="deleteButton" class="btn btn-danger" type="submit">Delete items</button>
       </form>
     </div>
     <div class="product-list">
@@ -39,7 +40,7 @@
             </div>
         </div>
         <div class="card" >
-            <img src="img/product6.png" class="card-img-top" alt="...">
+            <img src="img/product6.png" class="card-img-top flower-vase" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Craft Jewlery</h5>
                 <p class="card-text">$8</p>
@@ -116,7 +117,7 @@
             </div>
         </div>
         <div class="card" >
-            <img src="img/craft2.png" class="card-img-top" alt="...">
+            <img src="img/craft2.png" class="card-img-top table" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Craft Jewlery</h5>
                 <p class="card-text">$8</p>
@@ -172,32 +173,33 @@
         </div>
     </div>
     <script>
+        let count = 0; // Define count variable outside the event listeners
         document.addEventListener("DOMContentLoaded", function () {
-        const addToBagButtons = document.querySelectorAll(".addToBagBtn");
-        const cartCount = document.getElementById("cartCount");
+            const addToBagButtons = document.querySelectorAll(".addToBagBtn");
+            const cartCount = document.getElementById("cartCount");
 
-        let count = 0;
+            addToBagButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    count++;
+                    cartCount.innerHTML = count;
+                });
+            });
 
-        addToBagButtons.forEach((button) => {
-            button.addEventListener("click", function () {
-            count++;
-            cartCount.innerHTML = count;
+            const editBagButtons = document.querySelectorAll(".editBagBtn");
+            editBagButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    count = Math.max(0, count - 1); // Ensure count doesn't go below zero
+                    console.log(count, "+++");
+                    cartCount.innerHTML = count;
+                });
             });
         });
-        });
 
-        document.addEventListener("DOMContentLoaded", function () {
-        const addToBagButtons = document.querySelectorAll(".editBagBtn");
-        let cartCount = document.getElementById("cartCount").innerHTML;
-        let bagValue = parseInt(cartCount);
-        addToBagButtons.forEach((button) => {
-            button.addEventListener("click", function () {
-            bagValue = bagValue-1;
-            console.log(bagValue,"+++");
-            cartCount.textContent = bagValue;
+        const deleteItemsButton = document.getElementById("deleteButton");
+            deleteItemsButton.addEventListener("click", function () {
+                count = 0; // Reset count to 0
+                cartCount.innerHTML = count; // Update the cart count display
             });
-        });
-        });
     </script>
 </body>
 </html>
