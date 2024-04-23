@@ -6,21 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <title>Charts</title>
 </head>
 
-<body>
-  <div class="about-head">
-    <h3 class="top-product-heading">Charts</h3>
-    <a href="index.html" class="btn btn-primary home-button" target="_top">Home</a>
-  </div>
-  <div class="erd-diagram">
-    <h3 class="top-product-heading">ER Diagram</h3>
-    <img src="img/ERD.png" class="erd-img"/>
+<body class="viso-page">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <img src="img/main-icon.png" class="hand-made-icon" />
+        <a class="navbar-brand" href="index.html" target="_top">HANDI WORKS STUDIO</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html" target="_top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PLP.html">Jewelery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="charts.html">Charts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html" target="_top">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex search-form">
+          <input class="form-control me-2" type="search" placeholder="Search Product..." aria-label="Search">
+          <button id="searchButton" class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <li class="nav-item cart-icon">
+          <a href="registration.html" target="_top"><img class="shopping-cart" src="img/user.png" /></a>
+        </li>
+        <li class="nav-item cart-icon">
+          <img class="shopping-cart" src="img/add-bag.png" />
+        </li>
+      </div>
+    </div>
+  </nav>
+  <div class="visualizations">
+    <p>The visualizations have been derived from data provided by https://thepakcrafts.com/blog/craft-handmade-stats/.
+    </p>
+    <div class="craft-viso">
+      <img src="img/market-sizes.png" class="chart" />
+      <img src="img/Top-art-markets.png" class="chart" />
+      <img src="img/Population-percent-crafts.png" class="chart" />
+      <h3 class="top-product-heading">ER Diagram</h3>
+      <img src="img/ERD.png" class="erd-img" />
+    </div>
   </div>
 </body>
+
 </html>

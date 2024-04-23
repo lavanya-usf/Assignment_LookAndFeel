@@ -6,18 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <title>About Us</title>
 </head>
 
 <body style="background-color: #749BC2;">
-  <div class="about-head">
-    <h3 class="About-heading">About Us</h3>
-    <a href="index.html" class="btn btn-primary home-button" target="_top">Home</a>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <img src="img/main-icon.png" class="hand-made-icon" />
+        <a class="navbar-brand" href="index.html" target="_top">HANDI WORKS STUDIO</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html" target="_top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PLP.html">Jewelery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="charts.html">Charts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html" target="_top">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex search-form">
+          <input class="form-control me-2" type="search" placeholder="Search Product..." aria-label="Search">
+          <button id="searchButton" class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <li class="nav-item cart-icon">
+          <a href="registration.html" target="_top"><img class="shopping-cart" src="img/user.png" /></a>
+        </li>
+        <li class="nav-item cart-icon">
+          <img class="shopping-cart" src="img/add-bag.png" />
+        </li>
+      </div>
+    </div>
+  </nav>
   <div id="product-details" class="product-details about-dev">
     <div class="about-product-content">
       <div class="card about" style="width: 18rem;">
@@ -25,9 +57,10 @@
         <div class="card-body">
           <h5 class="card-title">Lavanya Chilakapudi</h5>
           <h6 class="card-title">Lead Developer</h6>
-          <h7><a href="https://www.linkedin.com/in/lavanya-chilakalapudi-66940b160" class="card-link">LinkedIn</a></h7>
-          <p class="card-text">Implemented registration and login features, and enhanced user experience with JavaScript functionalities.</p>
-        </p>
+          <h7><a href="https://github.com/lavanya-usf" class="card-link">Git</a></h7>
+          <p class="card-text">Implemented registration and login features, and enhanced user experience with JavaScript
+            functionalities.</p>
+          </p>
         </div>
       </div>
       <div class="card about" style="width: 18rem;">
@@ -35,8 +68,9 @@
         <div class="card-body">
           <h5 class="card-title">Gowtham Sai Bhuvanam</h5>
           <h6 class="card-title">UI/UX Designer</h6>
-          <h7><a href="https://www.linkedin.com/in/gowthamsaib" class="card-link">LinkedIn</a></h7>
-          <p class="card-text">Designed the jewelry & handcraft pages, created an efficient ER Diagram for our system's data management.</p>
+          <h7><a href="https://github.com/gowthamsaib" class="card-link">Git</a></h7>
+          <p class="card-text">Designed the jewelry & handcraft pages, created an efficient ER Diagram for our system's
+            data management.</p>
         </div>
       </div>
       <div class="card about" style="width: 18rem;">
@@ -44,7 +78,7 @@
         <div class="card-body">
           <h5 class="card-title">Tarun Peela</h5>
           <h6 class="card-title">UI Designer</h6>
-          <h7><a href="https://www.linkedin.com/in/tarun-peela-49b94b233" class="card-link">LinkedIn</a></h7>
+          <h7><a href="https://github.com/tarunpeela" class="card-link">Git</a></h7>
           <p class="card-text"> CSS for styling web pages, designed ER Diagrams for efficient data management.</p>
         </div>
       </div>
@@ -53,12 +87,14 @@
         <div class="card-body">
           <h5 class="card-title">Vasudeva Reddy</h5>
           <h6 class="card-title">UX Designer</h6>
-          <h7><a href="https://www.linkedin.com/in/vasudeva-reddy-bolleddula-3725472a1" class="card-link">LinkedIn</a></h7>
-          <p class="card-text">Designed Product Listing Pages (PLP) and  media queries for responsive web design.
+          <h7><a href="https://github.com/vasudevabo" class="card-link">Git</a>
+          </h7>
+          <p class="card-text">Designed Product Listing Pages (PLP) and media queries for responsive web design.
           </p>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>
